@@ -1,8 +1,9 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
-import { Text, View, StyleSheet, FlatList } from 'react-native';
+import { View, StyleSheet, FlatList } from 'react-native';
 import Header from './components/Header';
 import ListItem from './components/ListItem';
+import AddItem from './components/AddItem';
 
 const App = () => {
   const [items, setItems] = useState([
@@ -21,6 +22,8 @@ const App = () => {
   return (
     <View style={styles.container}>
       <Header title="Shopping List" />
+      <AddItem />
+
       <FlatList
         data={items}
         renderItem={({ item }) => (
