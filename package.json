@@ -10,6 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "clsx": "^1.1.1",
+    "eslint-plugin-react-native": "^3.11.0",
     "react": "17.0.1",
     "react-native": "0.64.2",
     "react-native-vector-icons": "^8.1.0",
