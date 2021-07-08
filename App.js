@@ -1,11 +1,23 @@
-import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+/* eslint-disable prettier/prettier */
+import React, { useState } from 'react';
+import { Text, View, StyleSheet, FlatList } from 'react-native';
 import Header from './components/Header';
 
 const App = () => {
+  const [items, setItems] = useState([
+    { id: 1, text: 'Milk' },
+    { id: 2, text: 'Egg' },
+    { id: 3, text: 'Bread' },
+    { id: 4, text: 'Juice' },
+  ]);
+
   return (
     <View style={styles.container}>
       <Header title="Shopping List" />
+      <FlatList
+        data={items}
+        renderItem={({ item }) => <Text>{item.text}</Text>}
+      />
     </View>
   );
 };
