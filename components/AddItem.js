@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import {
