@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { Text, View, StyleSheet, TouchableOpacity, Icon } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const ListItem = ({ item }) => {
   return (
