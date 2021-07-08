@@ -19,10 +19,16 @@ const App = () => {
     });
   };
 
+  const addItem = text => {
+    setItems(prevItems => {
+      return [{ id: Math.random().toFixed(2) * 100, text }, ...prevItems];
+    });
+  };
+
   return (
     <View style={styles.container}>
       <Header title="Shopping List" />
-      <AddItem />
+      <AddItem addItem={addItem} />
 
       <FlatList
         data={items}
